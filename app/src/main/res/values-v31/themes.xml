@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.MainActivity." parent="Theme.SplashScreen">
+    <style name="Theme.MainActivity" parent="Theme.SplashScreen">
         <item name="postSplashScreenTheme">@style/Theme.ECommerce</item> <!--This is needed otherwise the app will crash-->
         <item name="android:windowSplashScreenBackground">@color/primaryColor</item>
 
