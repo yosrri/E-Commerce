@@ -7,7 +7,7 @@
 
     <style name="Theme.ECommerce" parent="Base.Theme.ECommerce" />
     
-    <style name="MainActivityTheme" parent="Theme.ECommerce" tools:targetApi="31">
+    <style name="Theme.MainActivity" parent="Theme.ECommerce" tools:targetApi="31">
         <item name="android:statusBarColor">@color/primaryColor</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:navigationBarColor">@color/black</item>
