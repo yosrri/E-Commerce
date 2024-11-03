@@ -7,12 +7,13 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        //must be called before the onCreate
+        initSplashScreen()
         super.onCreate(savedInstanceState)
 //        enableEdgeToEdge()
-        initSplashScreen()
         setContentView(R.layout.activity_main)
     }
-
+//We could add animation for the splash screen from android 12 and greater
     private fun initSplashScreen() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             installSplashScreen()
