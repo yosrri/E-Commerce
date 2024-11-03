@@ -1,5 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<!--    No Action Bar removes the default toolbar from the application and lets you handle it yourself-->
     <style name="Base.Theme.ECommerce" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/primaryColor</item>
@@ -7,15 +8,15 @@
         <item name="colorAccent">@color/primaryColor</item>
 
         <!-- System UI Configurations-->
-        <item name="android:statusBarColor">@color/white</item>
-        <item name="android:windowLightStatusBar">true</item> <!-- For making status bar content color dark -->
-        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:statusBarColor">@color/white</item> <!--Status bar is the bar that includes battery info, notifications & network icon -->
+        <item name="android:windowLightStatusBar">true</item> <!-- For making status bar content color dark, it tells that the bar is light mode so you need to use dark colors for the icons itself to be visible -->
+        <item name="android:navigationBarColor">@android:color/white</item> <!-- This is the home button and back buttons that are down in the end of the phone -->
         <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>  <!-- For making Navigation bar content color dark -->
 
     </style>
 
     <style name="Theme.ECommerce" parent="Base.Theme.ECommerce" />
-
+<!--This is to handle splash screen in android versions less than 12-->
     <style name="Theme.MainActivity" parent="Theme.ECommerce">
         <item name="android:windowBackground">@drawable/launch_background</item>
 
